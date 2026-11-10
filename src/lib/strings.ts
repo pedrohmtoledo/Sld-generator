@@ -1,6 +1,7 @@
 // How many modules go on each string.
 //
-// v1 always has two strings. Modules are split evenly and any remainder
+// v1 always has two strings. Any quantity is allowed (no minimum or maximum).
+// Modules are split evenly and any remainder
 // goes to string 1, e.g. 41 modules -> [21, 20], 40 modules -> [20, 20].
 //
 // "(modulesQty: number): number[]" means: takes a number, returns an array of numbers.

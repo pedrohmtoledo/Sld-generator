@@ -11,7 +11,7 @@ export type ProjectDetails = {
   modulesModel: string
   modulesQty: number
   inverter: string
-  battery: string
+  battery: string // optional: '' means the system has no battery
 }
 
 // A full project: the details above, plus what the app adds.

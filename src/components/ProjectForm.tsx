@@ -81,7 +81,7 @@ function ProjectForm({ details, onChange }: Props) {
         </label>
 
         <label>
-          Battery
+          Battery (optional)
           <input name="battery" value={details.battery} onChange={handleChange} />
         </label>
       </fieldset>
