@@ -16,11 +16,25 @@ A web app for solar installers in Ireland. The installer enters the details of a
 
 ## How the drawing works
 
-**Decided:** the SLD is **generated automatically** from the project data. There is no hand-drawn template per equipment combination, because drawing every combination doesn't scale.
+The drawing is built in two stages, behind the same function (project data in, SVG string out), so stage 2 replaces stage 1 without touching the rest of the app.
+
+### Stage 1: Pedro's first template
+
+The first working version uses Pedro's existing hand-drawn SLD for 1 inverter, 2 strings and 1 battery (`sld-1-inv-2-string-v01.svg`, from the old `sldgenerator` repo).
+- It was exported from AutoCAD to SVG with placeholder text: `{{INVERTER}}`, `{{BATTERY}}`, `{{STRING_1}}`, `{{STRING_2}}`, `{{PV_MODULES}}`, `{{MODULES_QTY}}`, `{{CUSTOMER_NAME}}`, `{{CUSTOMER_ADDRESS}}`, `{{MPRN}}`, `{{INSTALLER_NAME}}`, `{{DATE}}`.
+- The app loads the SVG as text, escapes and uppercases the user's text and fills the placeholders.
+- This is the only template. No more templates get drawn per combination.
+
+### Stage 2: automatic assembly
+
+**Decided:** after stage 1, the SLD is **generated automatically** from the project data, because drawing every combination doesn't scale.
 
 - **Blocks (symbols):** each component (PV string, inverter, battery, isolators, protection devices, meter, grid connection, and so on) is drawn **once** as a block, with defined connection points. **Pedro draws the blocks in AutoCAD later.** Until then, use simple placeholder blocks drawn in code (boxes with labels), built so Pedro's blocks can replace them without changing the layout code.
 - **Layout:** code places the blocks and draws the wires between them based on the project data (how many strings, battery or no battery, and later three-phase and multiple inverters).
 - **Sheet frame:** the border, title block and legend stay fixed. The title block shows customer name, address, MPRN, installer and date (`en-IE`, DD/MM/YYYY). The bill of materials table is generated from the project data.
+
+### Both stages
+
 - **One entry point:** drawing generation sits behind a single function, project data in and SVG string out. The rest of the app (preview, PDF export) only calls that function.
 - **Text safety:** all user text is XML-escaped (`&`, `<`, `>`) and uppercased before it goes into the SVG.
 - **Output:** shown as a preview and exported to an A3 landscape PDF. The file name is `SLD-<CUSTOMER-NAME>.pdf` (uppercase, spaces → hyphens), or `SLD-DRAWING.pdf` if the name is empty.
@@ -45,7 +59,7 @@ TypeScript · React + Vite · React Router · Supabase (Postgres + auth; each in
 
 ## Roadmap
 
-1. **Foundation:** home page, routing (home, dashboard, project page), project form and string split, drawing generation, PDF export, tests and CI. Done step by step, one PR each.
+1. **Foundation:** home page, routing (home, dashboard, project page), project form and string split, drawing from the first template (stage 1), PDF export, tests and CI, then automatic assembly (stage 2). Done step by step, one PR each.
 2. **Supabase:** database, sign-up/login, projects per user, protected routes.
 3. **Quality:** form validation, error and loading states, README and screenshots.
 4. **Product:** more system variations, string calculator.
@@ -53,4 +67,4 @@ TypeScript · React + Vite · React Router · Supabase (Postgres + auth; each in
 
 ## Related
 
-Pedro's earlier learning project, `github.com/pedrohmtoledo/sldgenerator` (JavaScript), uses a single hand-drawn SVG template. Its escape and PDF export logic can carry over, and its template is a useful reference for layout and conventions, but the new app doesn't use templates. The old project stays separate. Don't change it.
+Pedro's earlier learning project, `github.com/pedrohmtoledo/sldgenerator` (JavaScript), has the stage 1 SVG template and the escape and PDF export logic to carry over. Its template is also the reference for layout and conventions in stage 2. The old project stays separate. Don't change it.
