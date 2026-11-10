@@ -19,4 +19,4 @@ Other scripts:
 
 ## Tech
 
-React + TypeScript, built with Vite.
+React + TypeScript, built with Vite. Pages are handled by React Router (see `src/App.tsx`).

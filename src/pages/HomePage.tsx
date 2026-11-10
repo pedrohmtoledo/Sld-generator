@@ -1,3 +1,5 @@
+import { Link } from 'react-router'
+
 // The landing page: the first thing an installer sees.
 // It's a plain function that returns JSX, with no props and no state yet.
 
@@ -24,10 +26,10 @@ function HomePage() {
         ))}
       </ul>
 
-      {/* The dashboard page arrives in the routing PR. Until then this link goes nowhere. */}
-      <a className="button" href="/dashboard">
+      {/* <Link> changes the page without reloading the whole app, unlike <a href>. */}
+      <Link className="button" to="/dashboard">
         Get started
-      </a>
+      </Link>
     </main>
   )
 }
