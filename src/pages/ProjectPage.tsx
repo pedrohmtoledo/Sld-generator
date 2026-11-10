@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { useParams } from 'react-router'
 import ProjectForm from '../components/ProjectForm'
-import { emptyProjectDetails, type ProjectDetails } from '../types/project'
+import SldPreview from '../components/SldPreview'
+import { emptyProjectDetails, type Project, type ProjectDetails } from '../types/project'
 import { splitModules } from '../lib/strings'
+import { generateSld } from '../drawing/generateSld'
 
-// One project: the form, and below it the string split.
-// The drawing preview will be added here in the next PR.
+// One project: the form, the string split and the drawing preview.
 //
 // useParams() reads the ":id" part of the URL (see App.tsx).
 // Projects aren't saved yet (that comes with Supabase), so every project
@@ -22,6 +23,13 @@ function ProjectPage() {
   // so it can never get out of sync with the number of modules.
   const strings = splitModules(details.modulesQty)
 
+  // The full project: what was typed, plus the id from the URL and the
+  // calculated strings. "id ?? 'new'" means: use id, or 'new' if it's missing.
+  const project: Project = { ...details, id: id ?? 'new', strings }
+
+  // Redrawn on every keystroke, so the preview always matches the form.
+  const svg = generateSld(project)
+
   return (
     <main className="page">
       <h1>{isNew ? 'New project' : `Project ${id}`}</h1>
@@ -37,6 +45,11 @@ function ProjectPage() {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section>
+        <h2>Drawing</h2>
+        <SldPreview svg={svg} />
       </section>
     </main>
   )

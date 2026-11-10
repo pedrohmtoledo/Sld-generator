@@ -105,3 +105,12 @@ body {
   border: 1px solid #cbd2d9;
   border-radius: 4px;
 }
+
+/* The drawing preview fills the page width and keeps its A3 shape. */
+.sld-preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: white;
+  border: 1px solid #e4e7eb;
+}
