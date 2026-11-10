@@ -50,7 +50,6 @@ TypeScript · React + Vite · React Router · Supabase (Postgres + auth; each in
 - One feature per branch, as a pull request.
 - **Never push to `main` and never merge.** Only push to your own feature branches and open PRs. `main` is protected by a GitHub ruleset.
 - Each PR **explains every file it adds or changes in plain language**, especially the TypeScript parts. Pedro is new to TypeScript (he knows some JavaScript, React basics from Full Stack Open parts 0–3, and Express basics).
-- Most PRs leave Pedro **a small task** to do himself, so he understands and owns the code.
 - Prefer **simple, readable code** over clever code, and **simple CSS**.
 - When Pedro asks to "explain", give the concept step by step with examples from this project, not just the fix.
 - **Never ask for passwords, API keys or connection strings in chat.** They go in a local `.env` (git-ignored) and in the hosting dashboards. The repo is public, so secrets must never be committed.
