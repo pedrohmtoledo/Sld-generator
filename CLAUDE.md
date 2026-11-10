@@ -14,12 +14,17 @@ A web app for solar installers in Ireland. The installer enters the details of a
 
 **Project data:** `customerName`, `customerAddress`, `mprn` (11 digits), `installerName`, `modulesModel`, `modulesQty`, `inverter`, `battery`, plus the calculated `strings` array and an `id`.
 
-## How the drawing works (for now)
+## How the drawing works
 
-- Pedro draws the SLD in AutoCAD as a template and exports it to SVG with placeholder text: `{{INVERTER}}`, `{{BATTERY}}`, `{{STRING_1}}`, `{{STRING_2}}`, `{{PV_MODULES}}`, `{{MODULES_QTY}}`, `{{CUSTOMER_NAME}}`, `{{CUSTOMER_ADDRESS}}`, `{{MPRN}}`, `{{INSTALLER_NAME}}`, `{{DATE}}` (`en-IE`, DD/MM/YYYY).
-- The app loads the SVG as text, XML-escapes the user's text (`&`, `<`, `>`), uppercases it, fills the placeholders, shows the result and exports it to an A3 landscape PDF.
-- The PDF file name is `SLD-<CUSTOMER-NAME>.pdf` (uppercase, spaces → hyphens), or `SLD-DRAWING.pdf` if the name is empty.
-- **Under review:** switching from one template per combination to generating the diagram from a symbol library plus layout rules. Keep drawing generation behind a single function (project data in, SVG string out) so the approach can change without touching the rest of the app.
+**Decided:** the SLD is **generated automatically** from the project data. There is no hand-drawn template per equipment combination, because drawing every combination doesn't scale.
+
+- **Blocks (symbols):** each component (PV string, inverter, battery, isolators, protection devices, meter, grid connection, and so on) is drawn **once** as a block, with defined connection points. **Pedro draws the blocks in AutoCAD later.** Until then, use simple placeholder blocks drawn in code (boxes with labels), built so Pedro's blocks can replace them without changing the layout code.
+- **Layout:** code places the blocks and draws the wires between them based on the project data (how many strings, battery or no battery, and later three-phase and multiple inverters).
+- **Sheet frame:** the border, title block and legend stay fixed. The title block shows customer name, address, MPRN, installer and date (`en-IE`, DD/MM/YYYY). The bill of materials table is generated from the project data.
+- **One entry point:** drawing generation sits behind a single function, project data in and SVG string out. The rest of the app (preview, PDF export) only calls that function.
+- **Text safety:** all user text is XML-escaped (`&`, `<`, `>`) and uppercased before it goes into the SVG.
+- **Output:** shown as a preview and exported to an A3 landscape PDF. The file name is `SLD-<CUSTOMER-NAME>.pdf` (uppercase, spaces → hyphens), or `SLD-DRAWING.pdf` if the name is empty.
+- Drawing conventions (symbols, which devices appear, labelling, wire routing) follow Pedro's reference SLD. Ask him rather than guessing.
 
 ## Stack
 
@@ -48,4 +53,4 @@ TypeScript · React + Vite · React Router · Supabase (Postgres + auth; each in
 
 ## Related
 
-Pedro's earlier learning project, `github.com/pedrohmtoledo/sldgenerator` (JavaScript), has the original SVG template and the fill/escape/PDF logic to carry over. It stays separate. Don't change it.
+Pedro's earlier learning project, `github.com/pedrohmtoledo/sldgenerator` (JavaScript), uses a single hand-drawn SVG template. Its escape and PDF export logic can carry over, and its template is a useful reference for layout and conventions, but the new app doesn't use templates. The old project stays separate. Don't change it.
