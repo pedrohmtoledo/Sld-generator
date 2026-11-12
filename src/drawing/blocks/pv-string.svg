@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="230.22699"
+   height="60.156269"
+   viewBox="0 0 230.22699 60.156269"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer-oc1"
+     transform="translate(-28.60543,-1424.2667)">
+    <path
+       id="path1"
+       d="m 713,787 h 655 V 470 H 713 v 317"
+       style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.16,0,0,-0.16,18.666667,1550.6667)" />
+    <path
+       id="path2"
+       d="M 1368,787 1185,628 1368,470"
+       style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.16,0,0,-0.16,18.666667,1550.6667)" />
+    <path
+       id="path3"
+       d="m 1385,628.5 c 0,9.11267 -7.3873,16.5 -16.5,16.5 -9.1127,0 -16.5,-7.38733 -16.5,-16.5 0,-9.11267 7.3873,-16.5 16.5,-16.5 9.1127,0 16.5,7.38733 16.5,16.5"
+       style="fill:none;stroke:#ed1f24;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.16,0,0,-0.16,18.666667,1550.6667)" />
+    <text
+       id="text3"
+       xml:space="preserve"
+       transform="matrix(0.16,0,0,0.16,241.86667,1453.0667)"><tspan
+         id="tspan3"
+         style="font-variant:normal;font-weight:normal;font-size:50.715px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">OUT</tspan></text>
+    <text
+       id="text4"
+       xml:space="preserve"
+       transform="matrix(0.16,0,0,0.16,28.266667,1436.4267)"><tspan
+         id="tspan4"
+         style="font-variant:normal;font-weight:normal;font-size:76.073px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">{{PV_MODEL}}</tspan></text>
+    <text
+       id="text5"
+       xml:space="preserve"
+       transform="matrix(0.16,0,0,0.16,38.346667,1454.1867)"><tspan
+         id="tspan5"
+         style="font-variant:normal;font-weight:normal;font-size:76.073px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">{{PV_QTY}}</tspan></text>
+    <path
+       id="path5"
+       d="M 713,490 V 449"
+       style="fill:none;stroke:#0000ff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.16,0,0,-0.16,18.666667,1550.6667)" />
+    <path
+       id="path6"
+       d="m 693,470 h 40"
+       style="fill:none;stroke:#0000ff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.16,0,0,-0.16,18.666667,1550.6667)" />
+    <text
+       id="text6"
+       xml:space="preserve"
+       transform="matrix(0.16,0,0,0.16,116.26667,1482.9867)"><tspan
+         id="tspan6"
+         style="font-variant:normal;font-weight:normal;font-size:63.394px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">0,0</tspan></text>
+  </g>
+</svg>
