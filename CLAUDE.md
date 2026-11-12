@@ -35,7 +35,7 @@ The SLD is **assembled automatically** from blocks Pedro draws in AutoCAD. Code 
 |---|---|---|
 | PV string | `OUT` | One per string, so drawn twice in v1 |
 | Fireman switch | `DC1_IN`, `DC2_IN`, `DC1_OUT`, `DC2_OUT`, `SUPPLY` | **4-pole, one switch for both strings.** (A 10-pole version for more strings comes later.) Powered from the spur switch. |
-| DC isolator | `IN`, `OUT` | Next to the inverter |
+| DC isolator | `IN`, `OUT` | **One per string** (so two in v1), next to the inverter |
 | Inverter | `DC1`, `DC2`, `AC_OUT`, `COMMS` | **Earth drawn inside the block** |
 | AC isolator | `IN`, `OUT` | **One per inverter**, in the inverter board |
 | Spur switch | `IN`, `OUT` | In the inverter board, feeds the fireman switch |
