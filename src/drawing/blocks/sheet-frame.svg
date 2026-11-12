@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg1"
-   width="2220.8"
-   height="1570.24"
-   viewBox="0 0 2220.8001 1570.24"
+   width="2184.48"
+   height="1533.76"
+   viewBox="0 0 2184.48 1533.76"
    sodipodi:docname="frame.svg"
    inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -25,21 +25,21 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.51322418"
-     inkscape:cx="1122.3166"
-     inkscape:cy="776.4638"
+     inkscape:cx="1104.7804"
+     inkscape:cy="756.97914"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer-oc2">
+     inkscape:current-layer="layer-oc1">
     <inkscape:page
-       x="0"
-       y="0"
+       x="2.2523402e-07"
+       y="2.3023485e-07"
        inkscape:label="[1] Layout1"
        id="page1"
-       width="2220.8"
-       height="1570.24"
+       width="2184.48"
+       height="1533.76"
        margin="0"
        bleed="0" />
   </sodipodi:namedview>
@@ -47,7 +47,7 @@
      id="layer-oc1"
      inkscape:groupmode="layer"
      inkscape:label="0"
-     transform="translate(0.08,-17.84)">
+     transform="translate(-18.08,-36.16)">
     <path
        id="path1"
        d="M 11519,9696 V 116"
@@ -131,15 +131,15 @@
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,1897.6,151.36)"><tspan
          id="tspan14"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">MCB/RCBO</tspan></text>
     <text
        id="text15"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,2077.6,143.52)"><tspan
+       transform="matrix(0.16,0,0,0.16,2077.76,143.52)"><tspan
          id="tspan15"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">MCB</tspan></text>
     <path
@@ -162,7 +162,7 @@
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,1878.08,292.16)"><tspan
          id="tspan17"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">AC ISOLATOR</tspan></text>
     <path
@@ -190,7 +190,7 @@
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,2047.84,299.04)"><tspan
          id="tspan21"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">DC ISOLATOR</tspan></text>
     <path
@@ -226,9 +226,9 @@
     <text
        id="text27"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,1940.8,372.16)"><tspan
+       transform="matrix(0.16,0,0,0.16,1940.96,372.16)"><tspan
          id="tspan27"
-         style="font-variant:normal;font-weight:normal;font-size:120.888px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:120.888px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">M</tspan></text>
     <text
@@ -236,7 +236,7 @@
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,1887.68,424.8)"><tspan
          id="tspan28"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">FIRE FIGHTER</tspan></text>
     <text
@@ -244,7 +244,7 @@
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,1888.16,443.68)"><tspan
          id="tspan29"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">SAFETY SWITCH</tspan></text>
     <path
@@ -262,7 +262,7 @@
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,2073.28,431.84)"><tspan
          id="tspan30"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">PV MODULE</tspan></text>
     <path
@@ -309,9 +309,9 @@
     <text
        id="text37"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,1902.56,576.64)"><tspan
+       transform="matrix(0.16,0,0,0.16,1902.72,576.64)"><tspan
          id="tspan37"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">BATTERY</tspan></text>
     <path
@@ -327,174 +327,171 @@
     <text
        id="text38"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,1880.32,841.76)"><tspan
+       transform="matrix(0.16,0,0,0.16,1880.16,841.92)"><tspan
          id="tspan38"
-         style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
-         y="0">OWNER:</tspan></text>
+         y="0">OWNER</tspan></text>
     <text
        id="text39"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,1875.68,899.84)"><tspan
+       transform="matrix(0.16,0,0,0.16,1959.52,841.92)"><tspan
          id="tspan39"
          style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
+         y="0">:</tspan></text>
+    <text
+       id="text40"
+       xml:space="preserve"
+       transform="matrix(0.16,0,0,0.16,1875.68,900)"><tspan
+         id="tspan40"
+         style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
          y="0">{{CUSTOMER_NAME}}</tspan></text>
     <path
-       id="path39"
+       id="path40"
        d="m 11635,3707 h 2082"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <text
-       id="text40"
+       id="text41"
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,1879.36,1026.56)"><tspan
-         id="tspan40"
-         style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="tspan41"
+         style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">INSTALLER:</tspan></text>
     <text
-       id="text41"
+       id="text42"
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,1875.68,1084.64)"><tspan
-         id="tspan41"
-         style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="tspan42"
+         style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">{{INSTALLER_NAME}}</tspan></text>
     <path
-       id="path41"
+       id="path42"
        d="m 11635,3355 h 2082"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <path
-       id="path42"
+       id="path43"
        d="m 11635,2507 h 2082"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <text
-       id="text42"
+       id="text43"
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,1881.28,1224)"><tspan
-         id="tspan42"
-         style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="tspan43"
+         style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">ADDRESS:</tspan></text>
     <text
-       id="text43"
+       id="text44"
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,1875.68,1272.48)"><tspan
-         id="tspan43"
-         style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="tspan44"
+         style="font-variant:normal;font-weight:normal;font-size:129.269px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">{{CUSTOMER_ADDRESS}}</tspan></text>
     <path
-       id="path43"
-       d="m 11635,443 h 2082"
-       style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0.16,0,0,-0.16,0,1588)" />
-    <text
-       id="text44"
-       xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,1867.2,1547.68)"><tspan
-         id="tspan44"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         x="0"
-         y="0">PAGE SIZE</tspan></text>
-    <path
        id="path44"
-       d="M 12341,443 V 160"
+       d="m 11635,443 h 2082"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <text
        id="text45"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,1993.6,1547.52)"><tspan
+       transform="matrix(0.16,0,0,0.16,1867.2,1547.68)"><tspan
          id="tspan45"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
-         y="0">A3</tspan></text>
+         y="0">PAGE SIZE</tspan></text>
+    <path
+       id="path45"
+       d="M 12341,443 V 160"
+       style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <text
        id="text46"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,2039.36,1547.36)"><tspan
+       transform="matrix(0.16,0,0,0.16,1993.6,1547.52)"><tspan
          id="tspan46"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
-         y="0">DATE</tspan></text>
+         y="0">A2</tspan></text>
     <text
        id="text47"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,2110.56,1547.68)"><tspan
+       transform="matrix(0.16,0,0,0.16,2039.52,1547.36)"><tspan
          id="tspan47"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">DATE</tspan></text>
+    <text
+       id="text48"
+       xml:space="preserve"
+       transform="matrix(0.16,0,0,0.16,2110.56,1547.68)"><tspan
+         id="tspan48"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">{{DATE}}</tspan></text>
     <path
-       id="path47"
+       id="path48"
        d="M 13047,443 V 159"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <path
-       id="path48"
+       id="path49"
        d="M 12699,443 V 159"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <path
-       id="path49"
+       id="path50"
        d="m 12997,6840 h 391 v -274 h -391 v 274"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <path
-       id="path50"
+       id="path51"
        d="M 13283,6840 V 6566"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <text
-       id="text50"
+       id="text51"
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,2068.96,575.68)"><tspan
-         id="tspan50"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="tspan51"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">METER</tspan></text>
     <path
-       id="path51"
+       id="path52"
        d="m 11863.234,5583.3013 c 3.794,-58.1094 52.034,-103.3013 110.266,-103.3013 58.232,0 106.472,45.1919 110.266,103.3013"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <path
-       id="path52"
+       id="path53"
        d="m 12081.234,5583.3013 c 3.794,-58.1094 52.034,-103.3013 110.266,-103.3013 58.232,0 106.472,45.1919 110.266,103.3013"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <path
-       id="path53"
+       id="path54"
        d="m 12081,5583 v 187"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
     <text
-       id="text53"
+       id="text54"
        xml:space="preserve"
        transform="matrix(0.16,0,0,0.16,1924.64,737.28)"><tspan
-         id="tspan53"
-         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:'Arial Unicode MS';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="tspan54"
+         style="font-variant:normal;font-weight:normal;font-size:97.919px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">CT</tspan></text>
     <path
-       id="path54"
+       id="path55"
        d="M 116,9696 H 13763 V 116 H 116 v 9580"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0.16,0,0,-0.16,0,1588)" />
-  </g>
-  <g
-     id="layer-oc2"
-     inkscape:groupmode="layer"
-     inkscape:label="vp"
-     transform="translate(0.08,-17.84)">
-    <path
-       id="path55"
-       d="M 0,0 H 13879 V 9813 H 0 V 0"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,0,1588)" />
   </g>
 </svg>
