@@ -4,7 +4,7 @@ Read this before working in the repo. It applies to every session.
 
 ## The product
 
-A web app for solar installers in Ireland. The installer enters the details of a PV system and gets a professional single line diagram (SLD), like a classic AutoCAD SLD, ready to download as an A3 PDF. Later, installers can log in and save projects. It's built to be deployed for real users, not just as a portfolio piece.
+A web app for solar installers in Ireland. The installer enters the details of a PV system and gets a professional single line diagram (SLD), like a classic AutoCAD SLD, ready to download as an A2 PDF. Later, installers can log in and save projects. It's built to be deployed for real users, not just as a portfolio piece.
 
 **v1 scope (decided 12 Nov 2026):**
 - **One inverter, two strings, no battery.**
@@ -41,7 +41,7 @@ The SLD is **assembled automatically** from blocks Pedro draws in AutoCAD. Code 
 | Spur switch | `IN`, `OUT` | In the inverter board, feeds the fireman switch |
 | Inverter board | (frame) | Enclosure outline drawn around the AC isolator and spur switch |
 | RCBO | `IN`, `OUT` | The inverter's RCBO in the main distribution board |
-| Sheet frame | none | Border, title block, legend. Title block has placeholders for customer name, address, MPRN, installer, date (`en-IE`, DD/MM/YYYY). |
+| Sheet frame | none | **A2 landscape.** Border, title block, legend. Title block has placeholders for customer name, address, MPRN, installer, date (`en-IE`, DD/MM/YYYY). |
 
 **Fixed section** (the same on every drawing, drawn once by Pedro as one piece): **main distribution board, meter and CT clamps, ESB meter**, with the **earth drawn inside the main distribution board**. The RCBO block connects into it.
 
@@ -52,7 +52,7 @@ The SLD is **assembled automatically** from blocks Pedro draws in AutoCAD. Code 
 **Drawing rules for every block** (so the code can join them up):
 1. One block per file, drawn at 1:1 in millimetres on a shared grid (e.g. 5 mm), with the insertion point at 0,0.
 2. **Connection points:** a small **red circle (`#ed1f24`)** at each point where a wire attaches, on the block's outer edge, with its name next to it (`IN`, `OUT`, `DC1`, …). Red is used for nothing else. The **insertion point** is a small **blue cross (`#0000ff`)** at the block's bottom-left, and blue is used for nothing else. The code reads both, then **hides them and their labels** in the final drawing.
-   - Draw each block at its **printed size on A3** (the inverter symbol is about 16 mm), so tiny blocks don't get rounded by the PDF export. Printed text is about 2–2.5 mm tall.
+   - Draw each block at its **printed size on the A2 sheet**, all blocks at matching sizes, so tiny blocks don't get rounded by the PDF export. Keep printed text the same height across all blocks.
 3. Text that changes is placeholder text: `{{MODEL}}`, `{{QTY}}`, `{{RATING}}`, `{{LABEL}}`. Same TrueType font as the stage 1 template.
 4. Same export path as stage 1: AutoCAD → PDF → Inkscape → Plain SVG, with text kept as text.
 5. Same line weights and text height across all blocks.
@@ -66,7 +66,7 @@ The SLD is **assembled automatically** from blocks Pedro draws in AutoCAD. Code 
 ### Always
 
 - **Text safety:** all user text is XML-escaped (`&`, `<`, `>`) and uppercased before it goes into the SVG.
-- **Output:** a preview plus an A3 landscape PDF named `SLD-<CUSTOMER-NAME>.pdf` (uppercase, spaces → hyphens), or `SLD-DRAWING.pdf` if the name is empty.
+- **Output:** a preview plus an **A2 landscape (594 × 420 mm)** PDF named `SLD-<CUSTOMER-NAME>.pdf` (uppercase, spaces → hyphens), or `SLD-DRAWING.pdf` if the name is empty.
 - Drawing conventions (symbols, labelling, wire routing) follow Pedro's reference SLD. Ask him rather than guessing.
 
 ## Stack
@@ -89,7 +89,7 @@ TypeScript · React + Vite · React Router · Supabase (Postgres + auth) · jsPD
 
 Done: home page, routing, project form + string split, stage 1 drawing (PRs #1–#4).
 
-1. **PDF export and tests:** A3 PDF download, Vitest set up with tests for the string split and escaping, tests run on every PR.
+1. **PDF export and tests:** A2 PDF download, Vitest set up with tests for the string split and escaping, tests run on every PR.
 2. **Pilot blocks:** assembler with placeholder blocks, then Pedro's PV string, DC isolator, inverter and sheet frame.
 3. **Full v1 block set:** fireman switch, AC isolator, spur switch, inverter board, RCBO, fixed main board / meter / CT / ESB section, cable and rating labels, single- vs three-phase.
 4. **Generator tests and review gallery:** automatic tests for every v1 configuration, plus a page showing them all side by side for Pedro to check by eye.
