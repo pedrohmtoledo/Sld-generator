@@ -56,6 +56,8 @@ The SLD is **assembled automatically** from blocks Pedro draws in AutoCAD. Code 
 4. Same export path as stage 1: AutoCAD → PDF → Inkscape → Plain SVG, with text kept as text.
 5. Same line weights and text height across all blocks.
 
+**Block files** go in `src/drawing/blocks/<block-name>.svg` (e.g. `pv-string.svg`, `inverter.svg`). Pedro keeps the source in one DWG with a layout per block and sends the exported SVGs; add them in a PR.
+
 **Until Pedro's blocks exist,** use simple placeholder blocks drawn in code (labelled boxes with the same connection points), built so his SVGs can drop in without changing the layout code.
 
 **Pilot first:** Pedro draws the PV string, DC isolator, inverter and sheet frame first. Build the assembler on those, check the result with him, then do the rest the same way.
