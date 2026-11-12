@@ -51,7 +51,8 @@ The SLD is **assembled automatically** from blocks Pedro draws in AutoCAD. Code 
 
 **Drawing rules for every block** (so the code can join them up):
 1. One block per file, drawn at 1:1 in millimetres on a shared grid (e.g. 5 mm), with the insertion point at 0,0.
-2. **Connection points:** a small circle on its own layer (e.g. `CONN`) at each point where a wire attaches, with its name next to it (`IN`, `OUT`, `DC1`, …). All on the grid.
+2. **Connection points:** a small **red circle (`#ed1f24`)** at each point where a wire attaches, on the block's outer edge, with its name next to it (`IN`, `OUT`, `DC1`, …). Red is used for nothing else. The **insertion point** is a small **blue cross (`#0000ff`)** at the block's bottom-left, and blue is used for nothing else. The code reads both, then **hides them and their labels** in the final drawing.
+   - Draw each block at its **printed size on A3** (the inverter symbol is about 16 mm), so tiny blocks don't get rounded by the PDF export. Printed text is about 2–2.5 mm tall.
 3. Text that changes is placeholder text: `{{MODEL}}`, `{{QTY}}`, `{{RATING}}`, `{{LABEL}}`. Same TrueType font as the stage 1 template.
 4. Same export path as stage 1: AutoCAD → PDF → Inkscape → Plain SVG, with text kept as text.
 5. Same line weights and text height across all blocks.
