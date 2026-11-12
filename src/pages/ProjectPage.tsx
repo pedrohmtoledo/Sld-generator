@@ -5,6 +5,7 @@ import SldPreview from '../components/SldPreview'
 import { emptyProjectDetails, type Project, type ProjectDetails } from '../types/project'
 import { splitModules } from '../lib/strings'
 import { generateSld } from '../drawing/generateSld'
+import { assembleSld } from '../drawing/assembly/assembleSld'
 
 // One project: the form, the string split and the drawing preview.
 //
@@ -30,6 +31,9 @@ function ProjectPage() {
   // Redrawn on every keystroke, so the preview always matches the form.
   const svg = generateSld(project)
 
+  // Stage 2 test: the same project, drawn automatically from Pedro's blocks.
+  const assembledSvg = assembleSld(project)
+
   return (
     <main className="page">
       <h1>{isNew ? 'New project' : `Project ${id}`}</h1>
@@ -50,6 +54,12 @@ function ProjectPage() {
       <section>
         <h2>Drawing</h2>
         <SldPreview svg={svg} />
+      </section>
+
+      <section>
+        <h2>Automatic drawing (test)</h2>
+        <p>Built from Pedro's blocks: frame, PV strings and inverter only, for now.</p>
+        <SldPreview svg={assembledSvg} />
       </section>
     </main>
   )
