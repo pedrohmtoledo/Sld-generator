@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg1"
-   width="93.500969"
-   height="86.240807"
-   viewBox="0 0 93.500965 86.240806"
+   width="187.19171"
+   height="172.00975"
+   viewBox="0 0 187.19172 172.00975"
    sodipodi:docname="inverter.svg"
    inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -24,9 +24,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="2.0546219"
-     inkscape:cx="140.17178"
-     inkscape:cy="-75.683025"
+     inkscape:zoom="0.51322418"
+     inkscape:cx="997.61472"
+     inkscape:cy="-497.83313"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -38,8 +38,8 @@
        y="0"
        inkscape:label="[1] Layout1"
        id="page1"
-       width="93.500961"
-       height="86.240807"
+       width="187.19173"
+       height="172.00975"
        margin="0"
        bleed="0" />
   </sodipodi:namedview>
@@ -47,143 +47,143 @@
      id="layer-oc1"
      inkscape:groupmode="layer"
      inkscape:label="0"
-     transform="translate(-88.657597,-667.78589)">
+     transform="translate(-123.76909,-1291.5103)">
     <path
        id="path1"
-       d="M 534,5620 H 163 v 370 h 371 v -370 l -371,370"
+       d="M 1543,1186 V 445 H 802 v 741 h 741 L 802,445"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0,-0.16,-0.16,0,1058.6667,774.66667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <text
        id="text1"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,102.82667,699.46667)"><tspan
+       transform="matrix(0.16,0,0,0.16,152.10667,1354.72)"><tspan
          id="tspan1"
-         style="font-variant:normal;font-weight:normal;font-size:64.633px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:129.362px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">DC</tspan></text>
     <text
        id="text2"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,143.78667,746.02667)"><tspan
+       transform="matrix(0.16,0,0,0.16,234.34667,1448)"><tspan
          id="tspan2"
-         style="font-variant:normal;font-weight:normal;font-size:64.633px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:129.362px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">AC</tspan></text>
     <path
        id="path2"
-       d="M 163,5990 H 349 534 163"
+       d="M 802,445 V 815 1186 445"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0,-0.16,-0.16,0,1058.6667,774.66667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <path
        id="path3"
-       d="M 10.5,0 C 10.5,5.79899 5.79899,10.5 0,10.5 -5.79899,10.5 -10.5,5.79899 -10.5,0 c 0,-5.79899 4.70101,-10.5 10.5,-10.5 5.79899,0 10.5,4.70101 10.5,10.5"
+       d="m 823,1000.5 c 0,11.3218 -9.17816,20.5 -20.5,20.5 -11.32184,0 -20.5,-9.1782 -20.5,-20.5 0,-11.32184 9.17816,-20.5 20.5,-20.5 11.32184,0 20.5,9.17816 20.5,20.5"
        style="fill:none;stroke:#ed1f24;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0.16,0,0,-0.16,100.18667,704.02667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <path
        id="path4"
-       d="M 10.5,0 C 10.5,5.79899 5.79899,10.5 0,10.5 -5.79899,10.5 -10.5,5.79899 -10.5,0 c 0,-5.79899 4.70101,-10.5 10.5,-10.5 5.79899,0 10.5,4.70101 10.5,10.5"
+       d="m 823,630.5 c 0,11.32184 -9.17816,20.5 -20.5,20.5 -11.32184,0 -20.5,-9.17816 -20.5,-20.5 0,-11.32184 9.17816,-20.5 20.5,-20.5 11.32184,0 20.5,9.17816 20.5,20.5"
        style="fill:none;stroke:#ed1f24;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0.16,0,0,-0.16,100.18667,733.62667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <text
        id="text4"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,88.266667,706.02667)"><tspan
+       transform="matrix(0.16,0,0,0.16,123.14667,1367.84)"><tspan
          id="tspan4"
-         style="font-variant:normal;font-weight:normal;font-size:31.67px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:63.387px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">DC1</tspan></text>
     <text
        id="text5"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,88.266667,735.62667)"><tspan
+       transform="matrix(0.16,0,0,0.16,122.98667,1427.04)"><tspan
          id="tspan5"
-         style="font-variant:normal;font-weight:normal;font-size:31.67px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:63.387px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">DC2</tspan></text>
     <path
        id="path5"
-       d="M 174,5990 H 153"
+       d="M 802,465 V 425"
        style="fill:none;stroke:#0000ff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0,-0.16,-0.16,0,1058.6667,774.66667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <path
        id="path6"
-       d="m 163,6000 v -20"
+       d="m 782,445 h 40"
        style="fill:none;stroke:#0000ff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0,-0.16,-0.16,0,1058.6667,774.66667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <text
        id="text6"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,91.946667,752.26667)"><tspan
+       transform="matrix(0.16,0,0,0.16,130.50667,1460.16)"><tspan
          id="tspan6"
-         style="font-variant:normal;font-weight:normal;font-size:31.67px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:63.387px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">0,0</tspan></text>
     <path
        id="path7"
-       d="M 10.5,0 C 10.5,5.79899 5.79899,10.5 0,10.5 -5.79899,10.5 -10.5,5.79899 -10.5,0 c 0,-5.79899 4.70101,-10.5 10.5,-10.5 5.79899,0 10.5,4.70101 10.5,10.5"
+       d="m 1564,1109.5 c 0,11.3218 -9.1782,20.5 -20.5,20.5 -11.3218,0 -20.5,-9.1782 -20.5,-20.5 0,-11.3218 9.1782,-20.5 20.5,-20.5 11.3218,0 20.5,9.1782 20.5,20.5"
        style="fill:none;stroke:#ed1f24;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0.16,0,0,-0.16,159.38667,695.22667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <text
        id="text7"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,161.38667,697.22667)"><tspan
+       transform="matrix(0.16,0,0,0.16,269.54667,1350.24)"><tspan
          id="tspan7"
-         style="font-variant:normal;font-weight:normal;font-size:31.67px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:63.387px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">COMMS</tspan></text>
     <path
        id="path8"
-       d="M 10.5,0 C 10.5,5.79899 5.79899,10.5 0,10.5 -5.79899,10.5 -10.5,5.79899 -10.5,0 c 0,-5.79899 4.70101,-10.5 10.5,-10.5 5.79899,0 10.5,4.70101 10.5,10.5"
+       d="m 1564,815.5 c 0,11.32184 -9.1782,20.5 -20.5,20.5 -11.3218,0 -20.5,-9.17816 -20.5,-20.5 0,-11.32184 9.1782,-20.5 20.5,-20.5 11.3218,0 20.5,9.17816 20.5,20.5"
        style="fill:none;stroke:#ed1f24;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0.16,0,0,-0.16,159.38667,718.74667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <text
        id="text8"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,161.70667,720.74667)"><tspan
+       transform="matrix(0.16,0,0,0.16,270.02667,1397.28)"><tspan
          id="tspan8"
-         style="font-variant:normal;font-weight:normal;font-size:31.67px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:63.387px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">AC_OUT</tspan></text>
     <text
        id="text9"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,111.78667,673.22667)"><tspan
+       transform="matrix(0.16,0,0,0.16,170.02667,1302.4)"><tspan
          id="tspan9"
-         style="font-variant:normal;font-weight:normal;font-size:47.505px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:95.081px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">INVERTER</tspan></text>
     <text
        id="text10"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,112.26667,684.42667)"><tspan
+       transform="matrix(0.16,0,0,0.16,170.98667,1324.8)"><tspan
          id="tspan10"
-         style="font-variant:normal;font-weight:normal;font-size:47.505px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:95.081px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">{{MODEL}}</tspan></text>
     <path
        id="path10"
-       d="M 163,5620 H 152"
+       d="M 1543,445 V 422"
        style="fill:none;stroke:#00ff00;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0,-0.16,-0.16,0,1058.6667,774.66667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <path
        id="path11"
-       d="m 145,5637 v -33"
+       d="m 1510,409 h 66"
        style="fill:none;stroke:#00ff00;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0,-0.16,-0.16,0,1058.6667,774.66667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <path
        id="path12"
-       d="m 152,5642 v -44"
+       d="m 1498,422 h 90"
        style="fill:none;stroke:#00ff00;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0,-0.16,-0.16,0,1058.6667,774.66667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <path
        id="path13"
-       d="m 138,5631 v -22"
+       d="m 1521,395 h 44"
        style="fill:none;stroke:#00ff00;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0,-0.16,-0.16,0,1058.6667,774.66667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
     <path
        id="path14"
-       d="m 132,5626 v -11"
+       d="m 1532,381 h 22"
        style="fill:none;stroke:#00ff00;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0,-0.16,-0.16,0,1058.6667,774.66667)" />
+       transform="matrix(0.16,0,0,-0.16,18.666667,1524)" />
   </g>
 </svg>
