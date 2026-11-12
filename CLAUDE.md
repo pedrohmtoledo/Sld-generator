@@ -15,7 +15,7 @@ A web app for solar installers in Ireland. The installer enters the details of a
 - The output is labelled as a drawing for review; a qualified person signs off.
 - **Out of scope for v1:** batteries, more than one inverter, more than two strings, microinverters, optimisers, EV chargers, off-grid.
 
-**Project data:** `customerName`, `customerAddress`, `mprn` (11 digits), `installerName`, `phase` (single or three), `modulesModel`, `modulesQty`, `inverter`, plus the calculated `strings` array and an `id`. Cable sizes and isolator ratings will be added once Pedro decides whether the installer types them or the app works them out (open question). The `battery` field from stage 1 goes away in stage 2.
+**Project data:** `customerName`, `customerAddress`, `mprn` (11 digits), `installerName`, `phase` (single or three), `modulesModel`, `modulesQty`, `inverter`, plus the calculated `strings` array and an `id`. **Cable sizes are calculated by the app**, not typed by the installer. Pedro provides the calculation rules (inputs and tables); don't invent electrical sizing rules. Whether isolator ratings are calculated the same way is still open. The `battery` field from stage 1 goes away in stage 2.
 
 ## How the drawing works
 
