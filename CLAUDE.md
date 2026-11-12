@@ -47,9 +47,9 @@ The SLD is **assembled automatically** from blocks Pedro draws in AutoCAD. Code 
 
 **The sheet has three parts** (from Pedro's A2 frame, `sheet-frame.svg`):
 - **Main area (top left, ~483 × 304 mm):** the single line diagram.
-- **Bottom strip (~101 mm tall):** the **block diagram** and the **equipment table**.
+- **Bottom strip (~101 mm tall):** the **equipment table on the left**, the **block diagram on the right**.
   - **Block diagram:** the same system as the SLD, but each device is a simple box with a **sequence number** (1, 2, 3…) in the order the power flows. Generated from the same project data.
-  - **Equipment table:** every device on the drawing (PV module, inverter, isolators, fireman switch, RCBO, meter, CT…), with its details. The numbers match the block diagram. (Columns to confirm with Pedro.)
+  - **Equipment table:** every device on the drawing (PV module, inverter, isolators, fireman switch, RCBO, meter, CT…), with its details. **The table's numbers match the block diagram's boxes** (box 3 = row 3). Suggested columns: No. | Device | Model / rating | Qty (to confirm with Pedro).
 - **Title column (right, 88 mm):** legend and title block. Fixed, filled from the project.
 - MPRN gets added to the title block later. The legend keeps the battery symbol.
 - Set every text in the final drawing to Arial (some frame text is Arial Unicode MS).
