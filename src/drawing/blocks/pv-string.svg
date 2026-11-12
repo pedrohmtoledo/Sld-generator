@@ -4,71 +4,105 @@
 <svg
    version="1.1"
    id="svg1"
-   width="230.22699"
-   height="60.156269"
-   viewBox="0 0 230.22699 60.156269"
+   width="142.14738"
+   height="93.825157"
+   viewBox="0 0 142.14739 93.825157"
+   sodipodi:docname="pvstring.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.51322418"
+     inkscape:cx="1001.5117"
+     inkscape:cy="-569.92638"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer-oc1">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="[1] Layout1"
+       id="page1"
+       width="142.14738"
+       height="93.825157"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
   <g
      id="layer-oc1"
-     transform="translate(-28.60543,-1424.2667)">
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     transform="translate(-121.32771,-1363.238)">
     <path
        id="path1"
-       d="m 713,787 h 655 V 470 H 713 v 317"
+       d="m 742,958 h 656 V 640 H 742 v 318"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,18.666667,1550.6667)" />
     <path
        id="path2"
-       d="M 1368,787 1185,628 1368,470"
+       d="M 1398,958 1215,799 1398,640"
        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,18.666667,1550.6667)" />
     <path
        id="path3"
-       d="m 1385,628.5 c 0,9.11267 -7.3873,16.5 -16.5,16.5 -9.1127,0 -16.5,-7.38733 -16.5,-16.5 0,-9.11267 7.3873,-16.5 16.5,-16.5 9.1127,0 16.5,7.38733 16.5,16.5"
+       d="m 1415,799.5 c 0,9.11267 -7.3873,16.5 -16.5,16.5 -9.1127,0 -16.5,-7.38733 -16.5,-16.5 0,-9.11267 7.3873,-16.5 16.5,-16.5 9.1127,0 16.5,7.38733 16.5,16.5"
        style="fill:none;stroke:#ed1f24;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,18.666667,1550.6667)" />
     <text
        id="text3"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,241.86667,1453.0667)"><tspan
+       transform="matrix(0.16,0,0,0.16,246.50667,1425.8667)"><tspan
          id="tspan3"
-         style="font-variant:normal;font-weight:normal;font-size:50.715px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:50.723px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">OUT</tspan></text>
     <text
        id="text4"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,28.266667,1436.4267)"><tspan
+       transform="matrix(0.16,0,0,0.16,144.90667,1372.1067)"><tspan
          id="tspan4"
-         style="font-variant:normal;font-weight:normal;font-size:76.073px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:76.085px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">{{PV_MODEL}}</tspan></text>
     <text
        id="text5"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,38.346667,1454.1867)"><tspan
+       transform="matrix(0.16,0,0,0.16,154.82667,1389.8667)"><tspan
          id="tspan5"
-         style="font-variant:normal;font-weight:normal;font-size:76.073px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:76.085px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">{{PV_QTY}}</tspan></text>
     <path
        id="path5"
-       d="M 713,490 V 449"
+       d="M 742,661 V 620"
        style="fill:none;stroke:#0000ff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,18.666667,1550.6667)" />
     <path
        id="path6"
-       d="m 693,470 h 40"
+       d="m 722,640 h 40"
        style="fill:none;stroke:#0000ff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.16,0,0,-0.16,18.666667,1550.6667)" />
     <text
        id="text6"
        xml:space="preserve"
-       transform="matrix(0.16,0,0,0.16,116.26667,1482.9867)"><tspan
+       transform="matrix(0.16,0,0,0.16,120.90667,1455.6267)"><tspan
          id="tspan6"
-         style="font-variant:normal;font-weight:normal;font-size:63.394px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:63.404px;font-family:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">0,0</tspan></text>
   </g>
