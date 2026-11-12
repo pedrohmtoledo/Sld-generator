@@ -4,45 +4,71 @@ Read this before working in the repo. It applies to every session.
 
 ## The product
 
-A web app for solar installers in Ireland. The installer enters the details of a PV system and gets a professional single line diagram (SLD), like a classic AutoCAD SLD, ready to download as an A3 PDF. Projects are saved so they can be opened, edited and downloaded again. It's built to be deployed for real users, not just as a portfolio piece.
+A web app for solar installers in Ireland. The installer enters the details of a PV system and gets a professional single line diagram (SLD), like a classic AutoCAD SLD, ready to download as an A3 PDF. Later, installers can log in and save projects. It's built to be deployed for real users, not just as a portfolio piece.
 
-**v1 scope:** single-phase, one inverter, two strings, one battery stack.
+**v1 scope (decided 12 Nov 2026):**
+- **One inverter, two strings, no battery.**
+- **Single-phase or three-phase.** The only difference on the drawing is the AC cables: single-phase is `1L+1N`, three-phase is `3L+1N`. The blocks are the same.
 - Modules are split evenly across the two strings, and any remainder goes to string 1 (41 → 21 / 20).
-- Equipment (module model, inverter, battery) is free text typed by the user, not picked from a component library.
+- Equipment (module model, inverter) is free text typed by the user, not picked from a component library.
 - There's no string voltage validation yet. A string calculator comes later.
 - The output is labelled as a drawing for review; a qualified person signs off.
+- **Out of scope for v1:** batteries, more than one inverter, more than two strings, microinverters, optimisers, EV chargers, off-grid.
 
-**Project data:** `customerName`, `customerAddress`, `mprn` (11 digits), `installerName`, `modulesModel`, `modulesQty`, `inverter`, `battery`, plus the calculated `strings` array and an `id`.
+**Project data:** `customerName`, `customerAddress`, `mprn` (11 digits), `installerName`, `phase` (single or three), `modulesModel`, `modulesQty`, `inverter`, plus the calculated `strings` array and an `id`. Cable sizes and isolator ratings will be added once Pedro decides whether the installer types them or the app works them out (open question). The `battery` field from stage 1 goes away in stage 2.
 
 ## How the drawing works
 
-The drawing is built in two stages, behind the same function (project data in, SVG string out), so stage 2 replaces stage 1 without touching the rest of the app.
+The drawing sits behind **one function: project data in, SVG string out**. The rest of the app (preview, PDF export) only calls that function, so stage 2 replaces stage 1 without touching anything else.
 
-### Stage 1: Pedro's first template
+### Stage 1: Pedro's first template (done, PR #4)
 
-The first working version uses Pedro's existing hand-drawn SLD for 1 inverter, 2 strings and 1 battery (`sld-1-inv-2-string-v01.svg`, from the old `sldgenerator` repo).
-- It was exported from AutoCAD to SVG with placeholder text: `{{INVERTER}}`, `{{BATTERY}}`, `{{STRING_1}}`, `{{STRING_2}}`, `{{PV_MODULES}}`, `{{MODULES_QTY}}`, `{{CUSTOMER_NAME}}`, `{{CUSTOMER_ADDRESS}}`, `{{MPRN}}`, `{{INSTALLER_NAME}}`, `{{DATE}}`.
-- The app loads the SVG as text, escapes and uppercases the user's text and fills the placeholders.
-- This is the only template. No more templates get drawn per combination.
+Pedro's hand-drawn SLD (`sld-1-inv-2-string-v01.svg`) filled with placeholder text. It's the only template. No more templates get drawn per combination.
 
 ### Stage 2: automatic assembly
 
-**Decided:** after stage 1, the SLD is **generated automatically** from the project data, because drawing every combination doesn't scale.
+The SLD is **assembled automatically** from blocks Pedro draws in AutoCAD. Code places the blocks and draws the wires and labels from the project data.
 
-- **Blocks (symbols):** each component (PV string, inverter, battery, isolators, protection devices, meter, grid connection, and so on) is drawn **once** as a block, with defined connection points. **Pedro draws the blocks in AutoCAD later.** Until then, use simple placeholder blocks drawn in code (boxes with labels), built so Pedro's blocks can replace them without changing the layout code.
-- **Layout:** code places the blocks and draws the wires between them based on the project data (how many strings, battery or no battery, and later three-phase and multiple inverters).
-- **Sheet frame:** the border, title block and legend stay fixed. The title block shows customer name, address, MPRN, installer and date (`en-IE`, DD/MM/YYYY). The bill of materials table is generated from the project data.
+**v1 blocks** (Pedro draws these):
 
-### Both stages
+| Block | Connection points | Notes |
+|---|---|---|
+| PV string | `OUT` | One per string, so drawn twice in v1 |
+| Fireman switch | `DC1_IN`, `DC2_IN`, `DC1_OUT`, `DC2_OUT`, `SUPPLY` | **4-pole, one switch for both strings.** (A 10-pole version for more strings comes later.) Powered from the spur switch. |
+| DC isolator | `IN`, `OUT` | Next to the inverter |
+| Inverter | `DC1`, `DC2`, `AC_OUT`, `COMMS` | **Earth drawn inside the block** |
+| AC isolator | `IN`, `OUT` | **One per inverter**, in the inverter board |
+| Spur switch | `IN`, `OUT` | In the inverter board, feeds the fireman switch |
+| Inverter board | (frame) | Enclosure outline drawn around the AC isolator and spur switch |
+| RCBO | `IN`, `OUT` | The inverter's RCBO in the main distribution board |
+| Sheet frame | none | Border, title block, legend. Title block has placeholders for customer name, address, MPRN, installer, date (`en-IE`, DD/MM/YYYY). |
 
-- **One entry point:** drawing generation sits behind a single function, project data in and SVG string out. The rest of the app (preview, PDF export) only calls that function.
+**Fixed section** (the same on every drawing, drawn once by Pedro as one piece): **main distribution board, meter and CT clamps, ESB meter**, with the **earth drawn inside the main distribution board**. The RCBO block connects into it.
+
+**Labels the code writes** (not blocks):
+- **Cable labels** on each wire: cable type and size. AC cables show `1L+1N` (single-phase) or `3L+1N` (three-phase).
+- **Ratings in amps** next to the fireman switch, DC isolator, AC isolator, spur switch and RCBO.
+
+**Drawing rules for every block** (so the code can join them up):
+1. One block per file, drawn at 1:1 in millimetres on a shared grid (e.g. 5 mm), with the insertion point at 0,0.
+2. **Connection points:** a small circle on its own layer (e.g. `CONN`) at each point where a wire attaches, with its name next to it (`IN`, `OUT`, `DC1`, …). All on the grid.
+3. Text that changes is placeholder text: `{{MODEL}}`, `{{QTY}}`, `{{RATING}}`, `{{LABEL}}`. Same TrueType font as the stage 1 template.
+4. Same export path as stage 1: AutoCAD → PDF → Inkscape → Plain SVG, with text kept as text.
+5. Same line weights and text height across all blocks.
+
+**Until Pedro's blocks exist,** use simple placeholder blocks drawn in code (labelled boxes with the same connection points), built so his SVGs can drop in without changing the layout code.
+
+**Pilot first:** Pedro draws the PV string, DC isolator, inverter and sheet frame first. Build the assembler on those, check the result with him, then do the rest the same way.
+
+### Always
+
 - **Text safety:** all user text is XML-escaped (`&`, `<`, `>`) and uppercased before it goes into the SVG.
-- **Output:** shown as a preview and exported to an A3 landscape PDF. The file name is `SLD-<CUSTOMER-NAME>.pdf` (uppercase, spaces → hyphens), or `SLD-DRAWING.pdf` if the name is empty.
-- Drawing conventions (symbols, which devices appear, labelling, wire routing) follow Pedro's reference SLD. Ask him rather than guessing.
+- **Output:** a preview plus an A3 landscape PDF named `SLD-<CUSTOMER-NAME>.pdf` (uppercase, spaces → hyphens), or `SLD-DRAWING.pdf` if the name is empty.
+- Drawing conventions (symbols, labelling, wire routing) follow Pedro's reference SLD. Ask him rather than guessing.
 
 ## Stack
 
-TypeScript · React + Vite · React Router · Supabase (Postgres + auth; each installer sees only their own projects) · jsPDF + svg2pdf.js · Vercel · Vitest, with checks on every PR.
+TypeScript · React + Vite · React Router · Supabase (Postgres + auth) · jsPDF + svg2pdf.js · Vercel · Vitest, with checks on every PR.
 
 ## How we work
 
@@ -58,12 +84,16 @@ TypeScript · React + Vite · React Router · Supabase (Postgres + auth; each in
 
 ## Roadmap
 
-1. **Foundation:** home page, routing (home, dashboard, project page), project form and string split, drawing from the first template (stage 1), PDF export, tests and CI, then automatic assembly (stage 2). Done step by step, one PR each.
-2. **Supabase:** database, sign-up/login, projects per user, protected routes.
-3. **Quality:** form validation, error and loading states, README and screenshots.
-4. **Product:** more system variations, string calculator.
-5. **Launch:** deploy for real installers, privacy policy and terms.
+Done: home page, routing, project form + string split, stage 1 drawing (PRs #1–#4).
+
+1. **PDF export and tests:** A3 PDF download, Vitest set up with tests for the string split and escaping, tests run on every PR.
+2. **Pilot blocks:** assembler with placeholder blocks, then Pedro's PV string, DC isolator, inverter and sheet frame.
+3. **Full v1 block set:** fireman switch, AC isolator, spur switch, inverter board, RCBO, fixed main board / meter / CT / ESB section, cable and rating labels, single- vs three-phase.
+4. **Generator tests and review gallery:** automatic tests for every v1 configuration, plus a page showing them all side by side for Pedro to check by eye.
+5. **Public generate page (no customer data saved) and deploy:** anyone can generate and download an SLD. Save only the equipment entries (module, inverter, quantities; no name, address or MPRN) to a Supabase table, with a note on the page saying so. Deploy on Vercel.
+6. **Login and saved projects:** Supabase auth, each user can only read their own rows (row level security), EU region, store only what the drawing needs, users can delete projects, privacy policy. Field-level encryption of name, address and MPRN is decided as a separate step after that.
+7. **String calculator:** using the collected equipment data and datasheet values.
 
 ## Related
 
-Pedro's earlier learning project, `github.com/pedrohmtoledo/sldgenerator` (JavaScript), has the stage 1 SVG template and the escape and PDF export logic to carry over. Its template is also the reference for layout and conventions in stage 2. The old project stays separate. Don't change it.
+Pedro's earlier learning project, `github.com/pedrohmtoledo/sldgenerator` (JavaScript), has the stage 1 template and the PDF export logic to carry over. It stays separate. Don't change it.
