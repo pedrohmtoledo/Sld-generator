@@ -26,7 +26,7 @@ let blocks: { frame: Block; pvString: Block; inverter: Block } | null = null
 function getBlocks() {
   if (blocks === null) {
     blocks = {
-      frame: loadBlock(frameSvg),
+      frame: loadBlock(frameSvg, 'start'), // title block text lines up on the left
       pvString: loadBlock(pvStringSvg),
       inverter: loadBlock(inverterSvg),
     }

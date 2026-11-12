@@ -53,7 +53,16 @@ function distance(a: Point, b: Point): number {
   return Math.hypot(a.x - b.x, a.y - b.y)
 }
 
-export function loadBlock(svgText: string): Block {
+// How placeholder text ({{...}}) lines up once it's filled in.
+// AutoCAD's text alignment is lost in the PDF export: each text only keeps its
+// start point. So the code puts the alignment back:
+// - 'centre': the filled-in text is centred where the placeholder was centred
+//   (used for blocks, e.g. the module name above the PV string)
+// - 'start': the filled-in text starts where the placeholder started
+//   (used for the title block, where text lines up on the left)
+export type PlaceholderAlign = 'centre' | 'start'
+
+export function loadBlock(svgText: string, align: PlaceholderAlign = 'centre'): Block {
   // 1. Turn the text into a real SVG element and put it on the page, invisible.
   //    (The browser only measures shapes that are on the page.)
   const doc = new DOMParser().parseFromString(svgText, 'image/svg+xml')
@@ -111,7 +120,22 @@ export function loadBlock(svgText: string): Block {
       }
     }
 
-    // 4. Remove the markers, then take what's left as the block's drawing.
+    // 4. Centre the placeholders (see PlaceholderAlign above).
+    //    getBBox() gives the placeholder's box in its own coordinates; we move the
+    //    text's anchor to the middle of that box and tell SVG to centre on it.
+    if (align === 'centre') {
+      for (const text of texts) {
+        if (!(text.textContent ?? '').includes('{{')) continue
+        const box = text.getBBox()
+        const middle = box.x + box.width / 2
+        for (const tspan of Array.from(text.querySelectorAll('tspan'))) {
+          tspan.setAttribute('x', String(middle))
+          tspan.setAttribute('text-anchor', 'middle')
+        }
+      }
+    }
+
+    // 5. Remove the markers, then take what's left as the block's drawing.
     for (const element of toRemove) element.remove()
 
     // Inkscape adds its own settings (e.g. <sodipodi:namedview>, inkscape:label="...").
